@@ -18,7 +18,7 @@
 		</p>
 		<script>
 			setTimeout(function() {
-				window.parent.location = '{{ route('dashboard') }}';
+				window.parent.location = '{{ route('checkIfLoggedIn') }}';
 			}, 1500);
 		</script>
 	@endif
