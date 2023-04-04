@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-div{
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.submit-btn{
+    background-color: #236712; 
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #236712;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.submit-btn:hover{
+    background-color: #113009;
+}
+
+.login-a{
+    text-decoration: none;
+    color: black;
+}
+
+.login-a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+input{
+    border: 1px solid rgb(202, 202, 202);
+    /* border: 1px solid red; */
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.error{
+    margin-top: 10px; 
+    margin-bottom:10px; 
+    color: rgb(255, 0, 0); 
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.loading-main-div{
+    background: #ffffff;
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    opacity: 0.8;
+    display: none;
+}
+
+/* Animations */
+    #form-id {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #form-id.slide-in-left {
+        animation: slide-in-left 0.5s ease-in-out forwards;
+    }
+
+    #form-id.slide-out-right {
+        animation: slide-out-right 0.5s ease-in-out forwards;
+    }
+
+    #form-id.slide-out-back {
+        animation: slide-out-back 1s ease forwards;
+    }
+
+    @keyframes slide-in-left {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(0%);
+        }
+    } 
+    
+    @keyframes slide-out-right {
+        0% {
+        transform: translateX(0%);
+        }
+        100% {
+        transform: translateX(130%);
+        }
+    }  
+
+    @keyframes slide-out-back {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-20%);
+        }
+    }
+/* Animations */

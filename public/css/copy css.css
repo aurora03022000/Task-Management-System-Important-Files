@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-div{
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.submit-btn{
+    background-color: #236712; 
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #236712;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.submit-btn:hover{
+    background-color: #3b0a0a;
+}
+
+.login-a{
+    text-decoration: none;
+    color: black;
+}
+
+.login-a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+input{
+    border: 1px solid rgb(202, 202, 202);
+    /* border: 1px solid red; */
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.error{
+    color: #ff0000; 
+    font-size: 14px; 
+    margin-top: 0px; 
+    margin-bottom:5px;
+    display: none;
+}
+
+
+
+.loading-main-div{
+    display: none;
+}
+
+.loading-main-div .loading-div{
+    background: #ffffff;
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    opacity: 0.8;
+}
+
+.loading-main-div .loading-bar{
+    background-color: transparent; 
+    position: absolute; 
+    top: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 1; 
+    margin-left: 10px;
+}
+
+/* Animations */
+    #form-id {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #form-id.slide-out-right {
+        animation: slide-out-right 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes slide-out-right {
+        0% {
+        transform: translateX(0%);
+        }
+        100% {
+        transform: translateX(130%);
+        }
+    }  
+/* Animations */

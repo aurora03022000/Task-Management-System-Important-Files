@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 70px;
+}
+
+.error{
+    margin-top: 10px; 
+    margin-bottom:10px; 
+    color: rgb(255, 0, 0); 
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    background-color: #236712; 
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #236712;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover{
+    background-color: #113009;
+}
+
+.create-a, .forgot-a{
+    text-decoration: none;
+    color: black;
+}
+
+.create-a:hover, .forgot-a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.input-username, .input-password{
+    border: 1px solid rgb(202, 202, 202);
+    /* border: 1px solid red; */
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+}
+
+.username-required, .password-required{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
